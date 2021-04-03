@@ -7,7 +7,7 @@ With EaseRTC you can use our easy APIs to shorten your long code. Our easy Docum
 # Try Before Use
 
 You can try our example online. 
-<a href="https://codingreef.github.io/EaseRTC/">Link To The Project</a>
+<a href="https://codingreefdev.github.io/EaseRTC/">Link To The Project</a>
 
 
 # How To Install
