@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://lh4.googleusercontent.com/iHxk6qkxXcYKhAq-ieSh47ImE_hZaNFv84TjmIWq_0UlwSFu3v_4rUh5b4FfC4zNQ7fbh0H7-GMm5d1YINjROJI=w16383" type="image/x-icon">
+    <title>EaseRTC | Example</title>
+    <style>
+        
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+        .title {
+            padding: 1vh;
+            background-color: #0084ff;
+            color: #ffffff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0px;
+            width: 98.3vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0px;
+        }
+        .main{
+            position: absolute;
+            top: 12vh;
+            padding-top: 10vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+        .main a{
+            color: #000;
+        }
+        button{
+            padding: 10px;
+            border-radius: 50px;
+            background-color: #0084ff;
+            border: none;
+            color: #fff;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        footer{
+            position: absolute;
+            top: 120vh;
+            background: grey;
+            width: 89.3vw;
+            padding: 5vw;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer a{
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <img src="https://lh4.googleusercontent.com/iHxk6qkxXcYKhAq-ieSh47ImE_hZaNFv84TjmIWq_0UlwSFu3v_4rUh5b4FfC4zNQ7fbh0H7-GMm5d1YINjROJI=w16383"
+            alt="">
+        <h1>EaseRTC</h1>
+    </div>
+    <div class="main">
+        <h1>Welcome To EaseRTC. This is an online Example to help you understand how powerful EaseRTC is.</h1>
+        <p>To Get Started, Click on both the buttons bellow:</p>
+        <button onclick="openUser1()">User1</button>
+        <button onclick="openUser2()">User2</button>
+        <p>Follow the bellow steps to start the video confrencing</p>
+        <p>Once you enter the 'user1' file on the first box is filled with some text this is call as an SDP</p>
+        <p>Copy it and go to user2</p>
+        <p>Paste it on the first box, click on connect</p>
+        <p>Then in the user2, second box you will find another SDP, copy it and paste it in the second box in user1</p>
+        <p>Then click on connect. you will find the video being disaplyed</p>
+        <p>Hey! it works</p>
+        <p>If it dosen't please check if your device has an camera and microphone</p>
+        <h3 style="color: red;">*Before you get started. Please note that we will be needing your audio and video permissions *</h3>
+        <p>Next steps, you can clone the git repo or just copy the library and the licence copy and get started</p>
+        <p>The file named EaseRTC.js is the library.</p>
+        <p>Documnetation on <a href="https://github.com/CodingReefDev/EaseRTC">GitHub</a> and on our Official website <a href="https://easertc.codingreef.com/">EaseRTC</a></p>
+    </div>
+    <footer>
+        <a href="www.codingreef.com">Codingreef</a>
+        <a href="dev.codingreef.com">Codingreef Developers</a>
+        <a href="https://github.com/CodingReef">GitHub Codingreef</a>
+        <a href="https://github.com/CodingReefDev">GitHub Codingreef Developers</a>
+    </footer>
+    <script>
+        function openUser1() {
+            window.open('./User1.html')
+        }
+        function openUser2() {
+            window.open('./User2.html')
+        }
+    </script>
+</body>
+
+</html>
