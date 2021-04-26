@@ -190,42 +190,6 @@ easeRTC.getMedia(true, false).then(stream=>{
 
 You can change the true and false value with different configurations as you wish.
 
-# VERSION 2.0 UPDATE
-
-
-## FEATURES 
-
-* Reconnect Option.
-
-
-## Supported Function
-
-
-## easeRTC.setUpReconnect()
-
-This function is to be called in the `answer peer's side` after first connection is being connected and before calling the `easeRTC.reconnect()` on the `offer peer's side.` This function helps you to setup reconnect on the side of answer peer. This is `IMPORTANT` to be called for the reconnection to work. This function only needs to be called once over a connection.
-
-Example
-
-```javascript
-easeRTC.setUpReconnect();
-```
-
-
-
-## easeRTC.reconnect()
-
-As mentioned above this can `only` be called in the offer peer's side. This reconnects the full session.
-
-Example
-
-```javascript
-easeRTC.reconnect();
-```
-
-
-`PLEASE NOTE TO CALL THE easeRTC.getTracks() BEFORE RECONNECTION (EVERY TIME) TO GET THE REMOTE USER'S AUDIO AND VIDEO STREAMS.`
-
 
 
 # What next?
