@@ -36,7 +36,6 @@ RTC.onTrack = (e) => {
 setInterval(() => {
     const SDP = localStorage.getItem("offerSDP");
     if (SDP) {
-        console.log(SDP)
         //setting offer and creating answer
         RTC.createAnswer(SDP).then(e => {
             localStorage.setItem("answerSDP", e)
@@ -45,7 +44,6 @@ setInterval(() => {
     }
     const ICE = localStorage.getItem("offerIce");
     if (ICE) {
-        console.log(ICE)
         //setting ICE
         RTC.addIce(ICE)
         localStorage.removeItem("offerIce");

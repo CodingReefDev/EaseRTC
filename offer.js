@@ -40,14 +40,12 @@ RTC.createOffer().then(e => {
 setInterval(() => {
     const SDP = localStorage.getItem("answerSDP");
     if (SDP) {
-        console.log(SDP)
         //setting answer SDP
         RTC.acceptAnswer(SDP)
         localStorage.removeItem("answerSDP");
     }
     const ICE = localStorage.getItem("answerIce");
     if (ICE) {
-        console.log(ICE)
         //setting ICE
         RTC.addIce(ICE)
         localStorage.removeItem("answerIce");

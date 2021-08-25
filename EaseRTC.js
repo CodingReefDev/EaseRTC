@@ -20,7 +20,6 @@ class EaseRTC {
         this.pc.addIceCandidate(new RTCIceCandidate(JSON.parse(iceCandidate)));
     }
     addTrack(track) {
-        console.log(track)
         return new Promise(async(res, rej)=>{
             const sender = this.pc.addTrack(track);
             res(sender)
@@ -57,7 +56,6 @@ class EaseRTC {
     createAnswer(offer = new RTCSessionDescription()) {
         return new Promise(async (res, rej) => {
             this.pc.ondatachannel = (e) => {
-                console.log(e);
                 if (e.channel.label == "EaseRTCReconnectionChannel") {
                     this.EaseRTCReconnectionChannel = e.channel;
                     this.EaseRTCReconnectionChannel.onmessage = (e) => {
@@ -76,7 +74,7 @@ class EaseRTC {
             try {
                 await this.pc.setRemoteDescription(new RTCSessionDescription(JSON.parse(offer)));
             } catch (error) {
-                console.log("Error while setting offer SDP", error)
+                rej("Error while setting offer SDP", error)
             }
             try {
                 await this.pc.createAnswer(this.answerOptions).then(async answer => {
