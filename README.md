@@ -73,7 +73,7 @@ As this is an open source Project you can add your advancement to this and contr
 
 # contributors
 
-@Vigneshkumar212
+[Vigneshkumar212](https://github.com/Vigneshkumar212)
 
 
 Thank you for using easeRTC,
